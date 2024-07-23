@@ -78,6 +78,5 @@ plt.plot(states, real_vals,linestyle='dotted', label='Real $V(s)$', linewidth=2)
 for idx,v in enumerate(res):
     plt.plot(states, v.values(), linestyle='solid', label=f'{episodes_lst[idx]} Episodes', linewidth=2)
 
-plt.title("Values Learned by TD(0)")
 plt.legend()
 plt.show()
