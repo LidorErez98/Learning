@@ -182,3 +182,6 @@ def plot_path(grid_size, path,states = ['s_0','s_4','s_8','s_9','s_{10}','s_{14}
 
 # Plot the path
 plot_path(grid_size, path)
+
+
+
