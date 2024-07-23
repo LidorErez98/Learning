@@ -74,9 +74,12 @@ for idx,preds in enumerate(res):
 states = real_V.keys()
 real_vals = real_V.values()
 
-plt.plot(states, real_vals,linestyle='dotted', label='Real $V(s)$', linewidth=2)
+
+plt.plot(states, real_vals,linestyle='dotted', label=f'Real $V^\pi(s)$', linewidth=2)
 for idx,v in enumerate(res):
     plt.plot(states, v.values(), linestyle='solid', label=f'{episodes_lst[idx]} Episodes', linewidth=2)
 
+plt.xlabel("State")
+plt.ylabel("$V^\pi(s)$")
 plt.legend()
 plt.show()
